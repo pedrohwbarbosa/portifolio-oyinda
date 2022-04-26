@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    background-color: transparent;
+}
+
+
+body {
+    background-color: #171717;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth !important;
+}
+
+body.menu-active{
+    overflow-y: hidden;
+}
+
+body.menu-active .menu{
+    left: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 28px;
+}
+
+header .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    color: white;
+}
+
+header .open-menu,
+header .close-menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu .link {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s color;
+}
+
+.menu .link:hover {
+    color: #27AE60;
+}
+
+/* main.container{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
+
+.intro-oyinda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 112px;
+}
+
+.intro-oyinda .titulo-oyinda {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    color: white;
+}
+
+.intro-oyinda .p-oyinda {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #828282;
+    display: block;
+    margin: 9px 0px 35px 0px;
+}
+
+.intro-oyinda .botao {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 34px;
+    border: 1px solid #F2F2F2;
+    display: inline-flex;
+}
+
+.intro-oyinda .botao:hover {
+    border: 1px solid #27AE60;
+    color: #27AE60;
+}
+
+.intro-oyinda .botao.botao-verde {
+    background-color: #27AE60;
+    border: none;
+    margin-right: 10px;
+    transition: 0.5s all;
+}
+
+.intro-oyinda .botao.botao-verde:hover {
+    background-color: #FFFFFF;
+    color: #27AE60;
+}
+
+.intro-oyinda .borda-branca {
+    border: 0.5px solid rgb(197, 197, 197, 0.2);
+    border-radius: 50%;
+    width: fit-content;
+}
+
+.intro-oyinda .img-oyinda {
+    border: 25px solid #202020;
+    border-radius: 50%;
+}
+
+.titulo {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    color: white;
+}
+
+.sobre-oyinda h3 {
+    margin-top: 47px;
+}
+
+.sobre-oyinda>p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: white;
+    max-width: 745px;
+    margin: 38px auto;
+}
+
+.sobre-oyinda .posicionamento-contato {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posicionamento-contato .dados-contato {
+    list-style: none;
+}
+
+.dados-contato .bolinha-contato {
+    box-sizing: content-box;
+    display: block;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: #27AE60;
+    margin: 0 auto 18px auto;
+    border: 25px solid #212121;
+}
+
+.dados-contato .titulos-contato {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: white;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.dados-contato .textos-contato {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: white;
+}
+
+
+.what-i-do .titulo-what-i-do {
+    margin: 120px 0 103px 0;
+}
+
+.what-i-do .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.what-i-do .caixa-vetor {
+    background-color: #212121;
+    padding: 35px 70px 36px 50px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.what-i-do .caixa-vetor-verde {
+    border: 1px solid #000000;
+    border-bottom: 2px solid #27AE60;
+}
+
+.what-i-do .texto-caixa {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    color: #535353;
+    margin-top: 30px;
+}
+
+.skills .titulo-skills {
+    margin: 133px 0 73px 0;
+}
+
+.skills .container-skills {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #212121;
+    align-items: center;
+}
+
+.skills .percentage-skills {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 94px;
+    color: #4F4F4F;
+    text-align: center;
+    margin-top: 59px;
+}
+
+.skills .languages-skills {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #27AE60;
+    text-align: center;
+    padding-bottom: 57px;
+    text-transform: uppercase;
+}
+
+.formulario .titulo-formulario {
+    margin: 100px 0 110px 0;
+}
+
+.formulario .centralizar-formulario-linhas {
+    display: flex;
+    justify-content: space-between;
+    gap: 37px;
+}
+
+.formulario .formulario-container {
+    max-width: 753px;
+    margin: 0 auto;
+}
+
+.formulario .estilo-texto-formulario {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
+    border-bottom: 1px solid #4F4F4F;
+    width: 50%;
+    padding: 54px 0;
+    margin-bottom: 47px;
+    padding: 10px;
+}
+
+.formulario .formulario-caixatexto {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
+    margin-bottom: 29px;
+    border: 1px solid #4F4F4F;
+    width: 100%;
+    resize: none;
+    padding: 10px 12px;
+    min-height: 200px;
+}
+
+.formulario .formulario-botao-centralizar {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario .formulario-botao {
+    color: #FFFFFF;
+    background-color: #27AE60;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 34px;
+    transition: 0.5s all;
+}
+
+.formulario .formulario-botao:hover {
+    color: #27AE60;
+    background-color: #FFFFFF;
+}
+
+footer.copyright-centralizar {
+    display: flex;
+    justify-content: center;
+    margin: 160px 0 93px 0;
+}
+
+footer .copyright {
+    color: #4F4F4F;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* Responsivo */
+
+/* tablet: 1024px */
+/* mobile: 767px */
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header .menu {
+        position: absolute;
+        background-color: #4F4F4F;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        flex-direction: column;
+        padding: 30px 40px;
+        align-items: flex-end;
+        transition: left 0.3s linear;
+    }
+
+    header .menu.-active{
+        left: 0;    
+    }
+
+    header .open-menu,
+    header .close-menu {
+        display: block;
+        width: 35px;
+        height: 30px;
+    }
+
+    header .open-menu rect,
+    header .close-menu path {
+        fill: #FFFFFF
+    } 
+
+    .intro-oyinda {
+        gap: 40px;
+    }
+
+    .intro-oyinda .titulo-oyinda {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .intro-oyinda .botao {
+        padding: 12px 22px;
+    }
+
+    .intro-oyinda .borda-branca {
+        width: 80%;
+    }
+
+    .intro-oyinda .img-oyinda {
+        border: 15px solid #202020;
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .dados-contato .textos-contato {
+        text-align: center;
+    }
+
+    .sobre-oyinda .posicionamento-contato {
+        flex-wrap: wrap;
+    }
+
+    .posicionamento-contato .dados-contato {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .what-i-do .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .what-i-do .caixa-vetor {
+        padding: 35px 37px 36px;
+        max-width: 350px;
+        width: 45%;
+    }
+
+    .skills .percentage-skills {
+        font-size: 60px;
+        line-height: 82px;
+    }
+
+    .skills .languages-skills {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .formulario .centralizar-formulario-linhas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0
+    }
+
+    .formulario .estilo-texto-formulario {
+        width: 100%;
+    }
+
+    .formulario .formulario-caixatexto {
+        margin-top: 10px;
+    }
+
+    footer.copyright-centralizar {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0 93px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro-oyinda {
+        flex-direction: column-reverse;
+    }
+
+    .intro-oyinda .borda-branca {
+        width: 100%;
+    }
+
+    .intro-oyinda .oyinda-botao {
+        text-align: center;
+    }
+
+    .what-i-do .caixa-vetor {
+        width: 109%;
+    }
+
+    /*tem um modo melhor de fazer?*/
+    .what-i-do .texto-caixa-web-design {
+        margin-right: 116px;
+    }
+
+    .skills .container-skills {
+        flex-direction: column
+    }
+}
