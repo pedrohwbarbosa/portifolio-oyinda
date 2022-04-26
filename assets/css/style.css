@@ -6,12 +6,14 @@
     background-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #171717;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    -webkit-scroll-behavior: smooth !important;
 }
 
 body.menu-active{
