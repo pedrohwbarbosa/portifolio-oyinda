@@ -6,14 +6,15 @@
     background-color: transparent;
 }
 
-html {
+html,
+body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
 }
 
 body {
     background-color: #171717;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body.menu-active{
@@ -74,11 +75,6 @@ header .close-menu {
 .menu .link:hover {
     color: #27AE60;
 }
-
-/* main.container{
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-} */
 
 .intro-oyinda {
     display: flex;
@@ -154,8 +150,8 @@ header .close-menu {
     color: white;
 }
 
-.sobre-oyinda h3 {
-    margin-top: 47px;
+.sobre-oyinda h3{
+    padding-top: 47px;
 }
 
 .sobre-oyinda>p {
@@ -209,7 +205,8 @@ header .close-menu {
 
 
 .what-i-do .titulo-what-i-do {
-    margin: 120px 0 103px 0;
+    padding-top: 120px;
+    margin: 0 0 103px 0;
 }
 
 .what-i-do .container {
@@ -242,7 +239,8 @@ header .close-menu {
 }
 
 .skills .titulo-skills {
-    margin: 133px 0 73px 0;
+    padding-top: 133px;
+    margin: 0 0 73px 0;
 }
 
 .skills .container-skills {
@@ -274,7 +272,8 @@ header .close-menu {
 }
 
 .formulario .titulo-formulario {
-    margin: 100px 0 110px 0;
+    padding-top: 100px;
+    margin: 0 0 110px 0;
 }
 
 .formulario .centralizar-formulario-linhas {
